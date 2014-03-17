@@ -1,0 +1,115 @@
+﻿@{
+    ViewBag.Title = "Mather";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="math-input-div">
+    <input class="math-input" type="text"/>
+    <label class="answer-label"></label>
+</div>
+
+<div class="helper-div">
+    <table class="helper-table">
+        <tr>
+            <td>
+                <div class="help-list-div">
+                    <label>Arithmetic</label>
+                    <div class="help-list-multycolumn-div">
+                        <ul class="additional-right-border">
+                            <li>
+                                <table>
+                                    <tr>
+                                        <td class="operation-cell">x+y</td>
+                                        <td class="additional-cell">(plus)</td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <table>
+                                    <tr>
+                                        <td class="operation-cell">x*y</td>
+                                        <td class="additional-cell">(multyplication)</td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <table>
+                                    <tr>
+                                        <td class="operation-cell">square(x)</td>
+                                        <td class="additional-cell">(squaring)</td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <table>
+                                    <tr>
+                                        <td class="operation-cell">x^y</td>
+                                        <td class="additional-cell">(exponentiation)</td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <table>
+                                    <tr>
+                                        <td class="operation-cell">exp(x)</td>
+                                        <td class="additional-cell">(exponent)</td>
+                                    </tr>
+                                </table>
+                            </li>
+                        </ul>
+
+
+                        <ul>
+                        <li>
+                            <table>
+                                <tr>
+                                    <td class="operation-cell">x-y</td>
+                                    <td class="additional-cell">(minus)</td>
+                                </tr>
+                            </table>
+                        </li>
+                            <li>
+                                <table>
+                                    <tr>
+                                        <td class="operation-cell">x/y</td>
+                                        <td class="additional-cell">(division)</td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <table>
+                                    <tr>
+                                        <td class="operation-cell">sqrt(x)</td>
+                                        <td class="additional-cell">(square root)</td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <table>
+                                    <tr>
+                                        <td class="operation-cell">x^(1/y)</td>
+                                        <td class="additional-cell">(root of n degree)</td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <table>
+                                    <tr>
+                                        <td class="operation-cell">log(x, base)</td>
+                                        <td class="additional-cell">(logarithm)</td>
+                                    </tr>
+                                </table>
+                            </li>
+                    </ul>
+                    </div>
+                </div>
+            </td>
+
+        </tr>
+    </table>
+</div>
+
+<link href="@Url.Content("~/Content/Styles/Home.css")" type="text/css" rel="stylesheet"/>
+<script src="@Url.Content("~/Scripts/mathjs/math.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Mather/Math.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Mather/HomeInitialScript.js")" type="text/javascript"></script>
