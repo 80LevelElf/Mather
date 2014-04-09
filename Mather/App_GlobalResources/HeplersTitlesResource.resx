@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Addition" xml:space="preserve">
+    <value>Simple addition operation. 
+For example: 1 + 2 = 3</value>
+  </data>
+  <data name="Degree" xml:space="preserve">
+    <value>Erects x to the power of y.
+For example: 3 ^ 3 = 27</value>
+  </data>
+  <data name="Division" xml:space="preserve">
+    <value>Operation of division.
+For example: 10 / 2 = 5</value>
+  </data>
+  <data name="Equal" xml:space="preserve">
+    <value>Return true if first number equal to second number, otherwise return false.
+For example: 4 == 5 = false</value>
+  </data>
+  <data name="Exp" xml:space="preserve">
+    <value>Exp is exponent function. Exp(x) is short name of e^x, where e is Euler's number.
+For example: exp(1) = e ^ 1 =  2.7182</value>
+  </data>
+  <data name="Floor" xml:space="preserve">
+    <value>The floor() method rounds a number downwards to the nearest integer.
+For example: floor(12.345) = 12</value>
+  </data>
+  <data name="GCD" xml:space="preserve">
+    <value>Greatest common divisor is the largest positive integer that divides the numbers without a remainder.
+For example: gcd(2, 4, 6) = 2</value>
+  </data>
+  <data name="GreatOrEqual" xml:space="preserve">
+    <value>Return true if first number more or equal than second number, otherwise return false.
+For example: 4 &gt;= 4 = true</value>
+  </data>
+  <data name="GreatThan" xml:space="preserve">
+    <value>Return true if first number more than second number, otherwise return false.
+For example: 12 &gt; 3 = true</value>
+  </data>
+  <data name="LCM" xml:space="preserve">
+    <value>Least common multiple is the smallest positive integer that is divisible by all of some numbers.
+For example: lcm(2, 4, 6) = 12.</value>
+  </data>
+  <data name="LessOrEqual" xml:space="preserve">
+    <value>Return true if first number less or equal than second number, otherwise return false.
+For example: 4 &lt;= 5 = true</value>
+  </data>
+  <data name="LessThan" xml:space="preserve">
+    <value>Return true if first number less than second number, otherwise return false.
+For example: 12 &lt; 3 = false</value>
+  </data>
+  <data name="Log" xml:space="preserve">
+    <value>The log(number, base) function is logarithm of a number is the exponent to which another fixed value, the base, must be raised to produce that number. In default case base equal to e.
+For example: log(100, 10) = 2, because 10^2 = 100
+log(e^2) = 2</value>
+  </data>
+  <data name="Modulo" xml:space="preserve">
+    <value>Simple modulo operation.
+For example: 13 % 3 = 1</value>
+  </data>
+  <data name="Multiplication" xml:space="preserve">
+    <value>Operation of multiplication.
+For example: 12 * 4 = 48</value>
+  </data>
+  <data name="NotEqual" xml:space="preserve">
+    <value>Return true if first number not equal to second number, otherwise return false.
+For example: 4 != 5 = true</value>
+  </data>
+  <data name="ReverseDegree" xml:space="preserve">
+    <value>Gets the root of y degree of number.
+For example: 32 ^ (1/5) = 2</value>
+  </data>
+  <data name="Round" xml:space="preserve">
+    <value>The round(number, occuracy) method rounds a number to the nearest integer with specified occuracy. In default way occuracy equal to 0.
+For example: round(2.34) = 2 
+round(2.34, 1) = 2.3</value>
+  </data>
+  <data name="Sqrt" xml:space="preserve">
+    <value>Return square root of number.
+For example: sqrt(4) = 2</value>
+  </data>
+  <data name="Square" xml:space="preserve">
+    <value>Return second degree of number.
+For example: square(3) = 9</value>
+  </data>
+  <data name="Substraction" xml:space="preserve">
+    <value>Simple subtraction operation.
+For example: 21 - 3 = 18</value>
+  </data>
+</root>

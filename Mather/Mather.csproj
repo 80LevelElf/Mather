@@ -63,6 +63,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\HeplersTitlesResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HeplersTitlesResource.resx</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -72,6 +77,7 @@
   <ItemGroup>
     <Content Include="Content\Images\More.png" />
     <Content Include="Content\Images\Settings.png" />
+    <Content Include="Content\Styles\About.css" />
     <Content Include="Content\Styles\Home.css" />
     <Content Include="Content\Styles\Main.css" />
     <Content Include="Global.asax" />
@@ -85,7 +91,8 @@
     <Content Include="Scripts\Libraries\jquery.validate.min.js" />
     <Content Include="Scripts\Libraries\modernizr-1.7.js" />
     <Content Include="Scripts\Libraries\modernizr-1.7.min.js" />
-    <Content Include="Scripts\Mather\HomeInitialScript.js" />
+    <Content Include="Scripts\Mather\Elements\ChooseElement.js" />
+    <Content Include="Scripts\Mather\Helpers.js" />
     <Content Include="Scripts\Mather\Math.js" />
     <Content Include="Scripts\mathjs\math.js" />
     <Content Include="Scripts\mathjs\math.min.js" />
@@ -119,6 +126,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\HeplersTitlesResource.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>HeplersTitlesResource.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\About.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

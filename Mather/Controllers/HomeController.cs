@@ -16,5 +16,10 @@ namespace Mather.Controllers
             return View();
         }
 
+        public ActionResult About()
+        {
+            return View();
+        }
+
     }
 }

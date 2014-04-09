@@ -1,21 +1,26 @@
 ﻿.font-style {
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	color: #000000;
-	font-size: 12px;
+	font-size: 14px;
 	padding: 5px;
+}
+
+a {
+    text-decoration: none;
 }
 
 body 
 {
+    font-family: sans-serif;
     background-color: #e6e6fa;
     min-width: 600px;
-    margin: 0px;
+    margin: 0;
 }
 
 div.header 
 {
     display: flex;
-    background: rgb(244,244,252);
+    background: rgb(244,244,244);
 }
 
 a.logo 
@@ -29,17 +34,15 @@ a.logo
     margin-left: 45%;
 }
 
-ul.right-menu img.right-menu-button {
+/*Right menu*/
+ul.right-menu img {
     cursor: pointer;
     display: inline;
-    margin-right: 16px;
-    padding-bottom: 8px;
-    
 }
 
 ul.right-menu 
 {
-    right: 0px;
+    right: 0;
     position: absolute;
     list-style: none;
     display: flex;
@@ -47,17 +50,107 @@ ul.right-menu
     margin-top: 10px;
 }
 
-ul.right-menu li.right-menu-item div.right-menu-panel 
+ul.right-menu li div.right-menu-panel 
 {
+    display: flex;
     position: absolute;
-    background: rgb(244,244,252);
+    background: rgb(240, 240, 240);
+    padding: 5px;
     visibility: hidden;
 }
 
-ul.right-menu li.right-menu-item:hover div.right-menu-panel {
-    visibility: visible;
+ul.right-menu li 
+{
+    padding: 4px;
+    margin-right: 16px;
+    border: 1px solid transparent;
+    z-index: 1;
 }
 
-ul.right-menu li.right-menu-item div.settings-panel {
-    right: 50px;
+ul.right-menu li:hover 
+{
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgba(100,100,100,0.5);
+}
+
+ul.right-menu li div.right-menu-panel {
+    z-index: 0;
+    top: 42px;
+}
+
+div.right-menu-panel a{
+    color: black;
+    padding: 4px;
+}
+
+div.right-menu-panel a:hover {
+    border-bottom: 1px solid #4775FF;
+}
+
+ul.right-menu li:hover div.right-menu-panel {
+    visibility: visible;
+    border: 1px solid rgba(100,100,100,0.5);
+}
+
+ul.right-menu li div.settings-panel {
+    right: 74px;
+}
+
+ul.right-menu li div.more-panel {
+    right: 16px;
+}
+
+/*Choose element*/
+div.choose-element {
+    display: flex;
+}
+
+div.choose-element button 
+{
+    margin: 0;
+    padding: 5px;
+    border: 1px solid rgba(100,100,100,0.5);
+    outline: 1px; /*For chrome*/
+    
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+
+}
+
+div.choose-element button.left 
+{
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+div.choose-element button.right 
+{
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+div.choose-element button.checked 
+{
+    border: 1px solid #4775FF;
+}
+
+/*Footer*/
+div.footer 
+{
+    background: rgb(244,244,244);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+div.footer label 
+{
+    margin-left: 45%;
 }

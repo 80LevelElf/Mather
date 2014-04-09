@@ -1,0 +1,13 @@
+﻿div.about-area {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+div.about-area a:hover {
+    border-bottom: 1px solid #4775FF;
+    color: black;
+    
+}

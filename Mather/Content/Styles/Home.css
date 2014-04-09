@@ -1,98 +1,117 @@
-﻿input.math-input { 
-    -webkit-border-radius: 5px; 
-    -moz-border-radius: 5px; 
-    border-radius: 5px; 
-    border: 1px solid #848484; 
-    outline:0; 
-    height:28px; 
-    padding-left: 10px;
+﻿input.math-input{
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    border:1px solid #848484;
+    outline:0;
+    height:28px;
+    padding-left:10px;
+    font-size:18px;
+
+    position:relative;
+    width:100%;
+}
+
+div.math-input-div
+{
+    width:60%;
+
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:16px;
+    margin-bottom:16px;
+}
+
+label.answer-label
+{
+    position:fixed;
+    margin-top:5px;
+    margin-left:10px;
+}
+
+/*Helpers*/
+div.helpers-area{
+    margin-top:30px;
+    padding-left:20%;
+    display:flex;
+}
+
+div.helper
+{
+    width:24.5%;
+    margin-right:1%;
+    display: inline-table;
+    
+    background-color:rgb(244,244,244);
+    border:1px solid rgba(100,100,100,0.5);
+    margin-bottom:7px;
+}
+
+div.helper div {
+    padding: 6px;
+}
+
+div.helper label{
+    font-size:20px;
+    border-bottom:1px solid rgba(100,100,100,0.5);
+    display:block;
+    padding-top:5px;
+    text-align:center;
+
+    /*Forbid user selection*/
+    -ms-user-select:none;
+    -moz-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+}
+
+div.helper label:hover{
+    background-color:rgb(204,204,204);
+}
+
+div.helper table
+{
+    border-collapse: collapse;
+    text-align: center;
     font-size: 18px;
+    width:100%;
+}
 
-    position: relative;
+div.helper table td {
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+}
+
+div.helper table td i {
+    font-size: 14px;
+}
+
+div.helper table td.right-border 
+{
+    border-right: 1px dashed rgba(100,100,100,0.5);
+}
+
+div.helper table td:hover {
+    border-bottom: 1px solid #4775FF;
+}
+
+div.helper table.one-column td {
     width: 100%;
- } 
- 
- div.math-input-div 
- {
-     width: 60%;
-     
-     margin-left: 20%;
-     margin-right: 20%;
-     margin-top: 16px;
-     margin-bottom: 16px;
- }
- 
- label.answer-label 
- {
-     position: fixed;
-     margin-top: 5px;
-     margin-left: 10px;
- }
- 
- div.helper-div {
-     margin-top: 30px;
- }
- 
- /*Helpers*/
- div.help-list-div {
-     position: fixed;
-     background-color: rgb(244, 244, 252);
-     border: 1px solid rgba(100,100,100,0.5);
- }
- 
- table.helper-table {
-     width: 60%;
-     margin-left: 20%;
-     margin-right: 20%;
-     text-align: center;
- }
- 
-   div.help-list-div label {
-       font-size: 20px;
-       border-bottom: 1px solid rgba(100,100,100,0.5);
-       display: block;
-       padding-top: 5px;
-       
-       /*Forbid user selection*/
-       -ms-user-select: none;
-       -moz-user-select: none;
-       -khtml-user-select: none;
-       -webkit-user-select: none;
-   }
-   div.help-list-div label:hover 
-   {
-       background-color: rgb(204, 204, 202)
-    }
-   
-  div.help-list-div ul {
-      list-style: none;
-      padding-left: 0px;
-      padding: 7px;
-      margin: 0;
-      
-  }
- div.help-list-div ul li{
-     margin-bottom: 3px;
-     cursor: pointer;
-     border-bottom: 1px solid transparent;
- }
- 
-  div.help-list-div ul li:hover {
-      border-bottom: 1px solid blue;
-  }
- 
-  div.help-list-div td.operation-cell {
-      font-size: 20px;
-  }
-  div.help-list-div td.additional-cell {
-      font-style: italic;  
 }
 
-div.help-list-div div.help-list-multycolumn-div {
-    display: flex;
-    visibility: visible;
+div.helper table.two-column td {
+    width: 50%;
 }
 
-div.help-list-div ul.additional-right-border {
-    border-right: 1px solid rgb(204, 204, 202);
+div.helper table.three-column td {
+    width: 33%;
+}
+
+div.helper table.four-column td {
+    width: 25%;
+}
+
+div.helper table td.empty:hover {
+    border-bottom: 1px solid transparent;
+    cursor: auto;
 }
