@@ -6,8 +6,11 @@
     margin-top: 20px;
 }
 
+div.about-area a {
+    color: black;
+    font-weight: bolder;
+}
+
 div.about-area a:hover {
     border-bottom: 1px solid #4775FF;
-    color: black;
-    
 }

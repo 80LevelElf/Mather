@@ -8,94 +8,134 @@
     <label class="answer-label"></label>
 </div>
 
-<div class="helpers-area">
-    
-    <div class="helper">
-        <label>Arithmetic</label>
-        <div>
-            <table class="two-column">
-                <tr>
-                    <td data-value="+" class="right-border" title="@Resources.HeplersTitlesResource.Addition">x + y</td>
-                    <td data-value="-" title="@Resources.HeplersTitlesResource.Substraction">x - y</td>
-                </tr>
-                <tr>
-                    <td data-value="*" class="right-border" title="@Resources.HeplersTitlesResource.Multiplication">x * y</td>
-                    <td data-value="/" title="@Resources.HeplersTitlesResource.Division">x / y</td>
-                </tr>
-                <tr>
-                    <td class="right-border empty"></td>
-                    <td data-value="%" title="@Resources.HeplersTitlesResource.Modulo">x % y</td>
-                </tr>
-                <tr>
-                    <td data-value="square(" class="right-border" title="@Resources.HeplersTitlesResource.Square">square(x)</td>
-                    <td data-value="sqrt(" title="@Resources.HeplersTitlesResource.Sqrt">sqrt(x)</td>
-                </tr>
-                <tr>
-                    <td data-value="^" class="right-border" title="@Resources.HeplersTitlesResource.Degree">x ^ y</td>
-                    <td data-value="^ (1/" title="@Resources.HeplersTitlesResource.ReverseDegree">x ^ (1/y)</td>
-                </tr>
-                <tr>
-                    <td data-value="exp(" class="right-border" title="@Resources.HeplersTitlesResource.Exp">exp(x)</td>
-                    <td data-value="log(" title="@Resources.HeplersTitlesResource.Log">log(x, <i>base</i>)</td>
-                </tr>
-                <tr>
-                    <td data-value="lcm(" class="right-border" title="@Resources.HeplersTitlesResource.LCM">lcm(a,b,..)</td>
-                    <td data-value="gcd(" title="@Resources.HeplersTitlesResource.GCD">gcd(a,b,..)</td>
-                </tr>
-            </table>        
-        </div>       
-    </div>
-    
-    <div class="helper">
-        <label>Compare & rounding</label>
-        <div>
-            <table class="two-column">
-                <tr>
-                    <td data-value=">" class="right-border" title="@Resources.HeplersTitlesResource.GreatThan">x &gt; y</td>
-                    <td data-value="<" title="@Resources.HeplersTitlesResource.LessThan">x &lt; y</td>
-                </tr>
-                <tr>
-                    <td data-value=">=" class="right-border" title="@Resources.HeplersTitlesResource.GreatOrEqual">x &ge; y</td>
-                    <td data-value="<=" title="@Resources.HeplersTitlesResource.LessOrEqual">x &le; y</td>
-                </tr>
-                <tr>
-                    <td data-value="==" class="right-border"title="@Resources.HeplersTitlesResource.Equal">x == y</td>
-                    <td data-value="!=" title="@Resources.HeplersTitlesResource.NotEqual">x != y</td>
-                </tr>
-                <tr>
-                    <td data-value="round(" class="right-border" title="@Resources.HeplersTitlesResource.Round">round(x, <i>occur</i>)</td>
-                    <td data-value="floor(" title="@Resources.HeplersTitlesResource.Floor">floor(x)</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    
-        <div class="helper">
-        <label>Constants</label>
-        <div>
-            <table class="two-column">
-                <tr>
-                    <td class="right-border">e</td>
-                    <td>i</td>
-                </tr>
-                <tr>
-                    <td class="right-border">pi</td>
-                    <td>tau</td> 
-                </tr>
-                <tr>
-                    <td class="right-border">LN2</td>
-                    <td>LN10</td>
-                </tr>
-                <tr>
-                    <td class="right-border">LOG2E</td>
-                    <td>LOG10E</td>
-                </tr>
-            </table>
-        </div>
-    </div>
+<table class="helpers-table">
+    <tr>
+        <td>
+            <div class="helper">
+                <label>Arithmetic</label>
+                <div>
+                    <table class="two-column">
+                        <tr>
+                            <td data-value="+" class="right-border" title="@Resources.HeplersTitlesResource.Addition">x + y</td>
+                            <td data-value="-" title="@Resources.HeplersTitlesResource.Substraction">x - y</td>
+                        </tr>
+                        <tr>
+                            <td data-value="*" class="right-border" title="@Resources.HeplersTitlesResource.Multiplication">x * y</td>
+                            <td data-value="/" title="@Resources.HeplersTitlesResource.Division">x / y</td>
+                        </tr>
+                        <tr>
+                            <td class="right-border empty"></td>
+                            <td data-value="%" title="@Resources.HeplersTitlesResource.Modulo">x % y</td>
+                        </tr>
+                        <tr>
+                            <td class="right-border" title="@Resources.HeplersTitlesResource.Square">square(x)</td>
+                            <td title="@Resources.HeplersTitlesResource.Sqrt">sqrt(x)</td>
+                        </tr>
+                        <tr>
+                            <td data-value="^" class="right-border" title="@Resources.HeplersTitlesResource.Degree">x ^ y</td>
+                            <td data-value="^ (1/" title="@Resources.HeplersTitlesResource.ReverseDegree">x ^ (1/y)</td>
+                        </tr>
+                        <tr>
+                            <td class="right-border" title="@Resources.HeplersTitlesResource.Exp">exp(x)</td>
+                            <td title="@Resources.HeplersTitlesResource.Log">log(x, <i>base</i>)</td>
+                        </tr>
+                        <tr>
+                            <td class="right-border" title="@Resources.HeplersTitlesResource.LCM">lcm(a,b,..)</td>
+                            <td title="@Resources.HeplersTitlesResource.GCD">gcd(a,b,..)</td>
+                        </tr>
+                    </table>        
+                </div>       
+            </div>
+            
+            <div class="helper">
+                <label>Trigonometry</label>
+                <div>
+                    <table class="two-column">
+                        <tr>
+                            <td class="right-border">sin(x)</td>
+                            <td>asin(x)</td>
+                        </tr>
+                        <tr>
+                            <td class="right-border">cos(x)</td>
+                            <td>acos(x)</td> 
+                        </tr>
+                        <tr>
+                            <td class="right-border">tan(x)</td>
+                            <td>atan(x)</td>
+                        </tr>
+                        <tr>
+                            <td class="right-border empty"></td>
+                            <td>atan2(y, x)</td>
+                        </tr>
+                        <tr>
+                            <td class="right-border">cot(x)</td>
+                            <td>acot(x)</td>
+                        </tr>
+                        <tr>
+                            <td class="right-border">sec(x)</td>
+                            <td>asec(x)</td>
+                        </tr>
+                        <tr>
+                            <td class="right-border">csc(x)</td>
+                            <td>acsc(x)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="helper">
+                <label>Compare & rounding</label>
+                <div>
+                    <table class="two-column">
+                        <tr>
+                            <td data-value=">" class="right-border" title="@Resources.HeplersTitlesResource.GreatThan">x &gt; y</td>
+                            <td data-value="<" title="@Resources.HeplersTitlesResource.LessThan">x &lt; y</td>
+                        </tr>
+                        <tr>
+                            <td data-value=">=" class="right-border" title="@Resources.HeplersTitlesResource.GreatOrEqual">x &ge; y</td>
+                            <td data-value="<=" title="@Resources.HeplersTitlesResource.LessOrEqual">x &le; y</td>
+                        </tr>
+                        <tr>
+                            <td data-value="==" class="right-border"title="@Resources.HeplersTitlesResource.Equal">x == y</td>
+                            <td data-value="!=" title="@Resources.HeplersTitlesResource.NotEqual">x != y</td>
+                        </tr>
+                        <tr>
+                            <td class="right-border" title="@Resources.HeplersTitlesResource.Round">round(x, <i>occur</i>)</td>
+                            <td title="@Resources.HeplersTitlesResource.Floor">floor(x)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </td>
 
-</div>
-
+        <td>
+            <div class="helper">
+                      <label>Constants</label>
+                      <div>
+                          <table class="two-column">
+                              <tr>
+                                  <td class="right-border">e</td>
+                                  <td>i</td>
+                              </tr>
+                              <tr>
+                                  <td class="right-border">pi</td>
+                                  <td>tau</td> 
+                              </tr>
+                              <tr>
+                                  <td class="right-border">LN2</td>
+                                  <td>LN10</td>
+                              </tr>
+                              <tr>
+                                  <td class="right-border">LOG2E</td>
+                                  <td>LOG10E</td>
+                              </tr>
+                          </table>
+                      </div>
+                  </div>
+        </td>
+    </tr>
+</table>
 
 <link href="@Url.Content("~/Content/Styles/Home.css")" type="text/css" rel="stylesheet"/>
 <script src="@Url.Content("~/Scripts/mathjs/math.js")" type="text/javascript"></script>

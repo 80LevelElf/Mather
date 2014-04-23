@@ -24,8 +24,14 @@
         $(element).click(function () {
             var value = $(element).attr("data-value");
 
+            //Try to get value from element text, eg sin(x) -> sin(
             if (typeof value === "undefined") {
                 value = $(element).text();
+
+                var indexOfFirstBracket = value.indexOf("(");
+                if (indexOfFirstBracket != -1) {
+                    value = value.slice(0, indexOfFirstBracket + 1);
+                }
             }
 
             mathInput.val(mathInput.val() + value);

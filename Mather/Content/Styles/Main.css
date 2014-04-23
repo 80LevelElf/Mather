@@ -1,4 +1,5 @@
-﻿.font-style {
+﻿/*Element*/
+.font-style {
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	color: #000000;
 	font-size: 14px;
@@ -13,10 +14,11 @@ body
 {
     font-family: sans-serif;
     background-color: #e6e6fa;
-    min-width: 600px;
+    min-width: 900px;
     margin: 0;
 }
 
+/*Page*/
 div.header 
 {
     display: flex;
@@ -52,7 +54,6 @@ ul.right-menu
 
 ul.right-menu li div.right-menu-panel 
 {
-    display: flex;
     position: absolute;
     background: rgb(240, 240, 240);
     padding: 5px;
@@ -94,6 +95,11 @@ ul.right-menu li:hover div.right-menu-panel {
 
 ul.right-menu li div.settings-panel {
     right: 74px;
+    min-width: 240px;
+}
+
+div.settings-panel table {
+    width: 100%;
 }
 
 ul.right-menu li div.more-panel {
@@ -120,7 +126,6 @@ div.choose-element button
     background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* IE10+ */
     background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
-
 }
 
 div.choose-element button.left 
